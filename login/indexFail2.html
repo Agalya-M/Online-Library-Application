@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>LOGIN / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
+    <script>
+        alert("Select the role");
+    </script>
+</head>
+<body background="lib3 image.jpg">
+    <div class="container">
+        <form method="POST" class="form" action="./login.jsp"  id="login">
+            <h1 class="form__title">LOGIN</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="bldl">
+                <p onclick="Checkrole" style="color: white; padding-right: -90px; margin-left: 38px;">Role:</p>
+                <select name="role" style="position: relative; bottom: 25px; left: 9px; padding: 2.5px 7px;">
+                <option value="0">Select the role</option>
+                <option value="1">Librarian</option>
+                <option value="2">Student</option>    
+                </select>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" name="username" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" name="password" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Sign in</button>
+            <p class="form__text">
+                <a href="./forgotpwd.html" class="form__link" id="linkForgotpassword">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./createuser.html" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+    
+    </div>
+    <!-- <script src="./src/main.js"></script> -->
+</body>
